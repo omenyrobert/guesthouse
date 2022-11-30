@@ -1,142 +1,24 @@
 <template>
-  <center>
-    <div class="bg-black w-100">
-      <div class="" style="width: 95%">
-        <div style="display: flex; justify-content: space-between">
-          <div
-            class="mt-2"
-            style="display: flex; justify-content: space-between"
-          >
-            <i id="iconss" class="bi bi-twitter fs-5 m-2 text-white"></i>
-            <i class="bi bi-instagram fs-5 m-2 text-white"></i>
-            <i id="iconss" class="bi bi-facebook fs-5 m-2 text-white"></i>
-            <i class="bi bi-youtube fs-5 m-2 text-white"></i>
-            <i id="iconss" class="bi bi-apple fs-5 m-2 text-white"></i>
-            <i id="iconss" class="bi bi-spotify fs-5 m-2 text-white"></i>
-          </div>
-          <div>
-            <h2 id="main-title" class="text-white fst-italic mt-3" style="font-weight: bold; font-family: cursive;">
-              Seventeen Music Ug
-            </h2>
-          </div>
-          <div style="display: flex; justify-content: space-between">
-            <i
-              id="account"
-              class="bi bi-person-fill fs-5 text-white"
-            ></i>
-            <i class="bi bi-list fs-2 m-2 text-white"></i>
-          </div>
-        </div>
-      </div>
-      <div class="container row">
-        <div class="col-md-6">
-          <div id="banner-title">
-<h1 class="fst-italic text-primary mt-3" style="font-weight: bold;">
-              Seventeen Music Ug
-            </h1>
-            <h5 class="text-white" style="font-family: cursive;">Buy and be the first one to listen and enjoy our music</h5>
-          </div>
-        </div>
-       <div class="col-md-6">
-  <img class="w-100" src="https://res.cloudinary.com/dtlkiv19d/image/upload/v1656922199/Kallery/seventeenmusic/back2_vpstxs.png" alt="">
-            <div id="banner-title2">
-<h1 class="fst-italic text-primary mt-3" style="font-weight: bold;">
-              Seventeen Music Ug
-            </h1>
-            <h5 class="text-white" style="font-family: cursive;">Buy and be the first one to listen and enjoy our music</h5>
-          </div>
-       </div>
-      </div>
-    </div>
-    <div class="d-flex search-div">
-      <input
-        type="text"
-        v-model="search"
-        class="bg-black form-control border-primary text-primary"
-        id="search"
-        placeholder="search for songs"
-      />
-      <button
-        class="btn btn-primary"
-        style="height: 40px; margin-left: -10px; margin-top: 20px"
-      >
-        Search
-      </button>
-    </div>
-    <!-- // latest songs  -->
-    <div class="d-flex pt-5" id="titles">
-      <h2 class="text-white"><b>Latest</b></h2>
-      <h2 class="text-primary" style="margin-left: 10px"><b>Songs</b></h2>
-    </div>
-    <h6 class="text-white m-3">
-      Seventeen Music Ug's hottest releases all available here
-    </h6>
-    <div class="container row mt-3">
-      <div class="col-md-4" v-for="song in filteredSong" :key="song.id">
-        <div class="m-2 bg-black rounded-3">
-          <img class="images" :src="song.photo" />
-          <div class="p-3">
-            <div class="d-flex" style="justify-content: space-between">
-              <p style="color: #fff" @click="downloadSong">{{ song.name }}</p>
-              <p class="text-primary">New</p>
-              <h6 style="color: #fff">UGX: {{ song.amount }}</h6>
-            </div>
-            <button
-              class="border-primary btn btn-dark bg-black text-primary"
-              @click="payViaService(song)"
-            >
-              Buy Now
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="text-white m-5 p-5" v-if="filteredSong.length === 0">
-        Sorry We don't have that Song
-      </div>
-    </div>
-    <div class="w-100 bg-black mt-3">
-        <!-- // updates  -->
-        <div class="d-flex pt-5" id="titles">
-      <h2 class="text-white"><b>Latest</b></h2>
-      <h2 class="text-primary" style="margin-left: 10px"><b>Updates</b></h2>
-    </div>
+<div>
+  <navbar/>
+<mainPage/>
+<footerSection/>
+</div>
 
-        <div class="container row mt-3">
-      <div class="col-md-4" v-for="song in updates" :key="song.id">
-        <div class="m-2 rounded-3" style="background-color: #1a1a1a;">
-          <img class="images" :src="song.photo" />
-          <div class="p-3">
-            <div class="d-flex" style="justify-content: space-between">
-              <p style="color: #fff">{{ song.name }}</p>
-              <h6></h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <!-- // gallery -->
-       <div class="d-flex pt-5" id="titles">
-      <h2 class="text-white"><b>Our</b></h2>
-      <h2 class="text-primary" style="margin-left: 10px"><b>Gallery</b></h2>
-    </div>
-        <div class="container row mt-3">
-      <div class="col-md-4" v-for="song in gallery" :key="song.id">
-        <div class="m-2 bg-black rounded-3">
-          <img class="images" :src="song.photo" />
-        </div>
-      </div>
-    </div>
-    <div class="bg-black p-3 mt-4 p-3">All rights reserved Seventeen music Ug</div>
-  </center>
 </template>
 
 <script>
 import axios from "axios";
-
+import navbar from "../components/nav.vue";
+import footerSection from "../components/footer.vue";
+import mainPage from "../components/mainPage.vue";
 export default {
   name: "HomeView",
+  components: {
+     navbar,
+     footerSection,
+     mainPage
+  },
   data() {
     return {
       selectedSong: null,
