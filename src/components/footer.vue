@@ -9,17 +9,17 @@
             and your guest. It is located along Ikori Road Plot 81, Kumi
             Municipality.<br />
             <br />
-            The above rates are inclusive of Local Hotel Service Tax. The rates
-            too include Bed and Breakfast. Residing Guests are provided with a
-            bottle of mineral water in the room daily, free Internet. For more
-            information Call or WhatsApp: +256 (0) 772510187 or +256 (0)
-            706110187
+            <img style="width: 100px; border-radius: 10px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThCA6UKlhwrp7HH86XtlneXzpCL-cINuWnyQ&usqp=CAU">
+           <img style="width: 100px; border-radius: 10px; margin-left: 10px;" src="https://media.zenfs.com/en/prnewswire.com/7d86e8106e293377ec8a8bb8deab4cc4">
           </p>
+          <h6>Director's Info</h6>
+          <p>+256 (0) 706110187</p>
+          <p>+256 (0) 772510187</p>
         </div>
         <div class="col-md-3 p-3">
           <h4>Conference</h4>
           <p style="font-size: 13px">
-            L u n c h / D i n n e r P l a t e 1 0 , 0 0 0 / =
+            Lunch  1 0 , 0 0 0 / =
           </p>
           <p>Teas and Bites 3,000/=</p>
           <p style="font-size: 13px">Mineral Water 1,500/=</p>

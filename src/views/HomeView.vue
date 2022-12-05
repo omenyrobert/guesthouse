@@ -1,48 +1,11 @@
 <template>
   <div>
     <navbar />
-    <div class="container-fluid banner">
-      <div class="banner-content">
-        <div class="row">
-          <div class="col-md-4">
-            <h1 class="text-white banner-title"><b>Bethany Home Kumi</b></h1>
-          </div>
-          <div class="col-md-8"></div>
-        </div>
-		
-      </div>
-    </div>
-    <div class="container">
-		<center>
-		<div class="row">
-			<div class="col-md-2">
-               <img  data-aos="zoom-in"
-        data-aos-delay="500"
-        data-aos-duration="1500" src="https://res.cloudinary.com/dtlkiv19d/image/upload/v1670010457/faa2_y11tqm.jpg" class="slid">
-			</div>
-			<div class="col-md-2">
-               <img  data-aos="zoom-in"
-        data-aos-delay="500"
-        data-aos-duration="1500" src="https://res.cloudinary.com/dtlkiv19d/image/upload/v1670008061/gh_18_wkjsrs.jpg" class="slid">
-			</div>
-			<div class="col-md-2">
-               <img  data-aos="zoom-in"
-        data-aos-delay="500"
-        data-aos-duration="1500" src="https://res.cloudinary.com/dtlkiv19d/image/upload/v1670008083/gh_31_tuyhmr.jpg" class="slid">
-			</div>
-			<div class="col-md-2">
-               <img  data-aos="zoom-in"
-        data-aos-delay="500"
-        data-aos-duration="1500" src="https://res.cloudinary.com/dtlkiv19d/image/upload/v1670010454/breakfast_nianys.jpg" class="slid">
-			</div>
-			<div class="col-md-2">
-               <img  data-aos="zoom-in"
-        data-aos-delay="500"
-        data-aos-duration="1500" src="https://res.cloudinary.com/dtlkiv19d/image/upload/v1670008115/gh_14_uuahhe.jpg"  class="slid">
-			</div>
+    <banaVue/>
+<slideVue/>
 
-		</div>
-		</center>
+    <div class="container">
+
       <h4
         class="text-primary text-center mt-5"
         data-aos="zoom-in"
@@ -116,7 +79,7 @@
             </div>
 
             <div class="d-flex justify-content-between">
-              <a href="https://wa.me/+256 706110187"
+              <a href="https://wa.me/+256 761257383"
                 class="bg-light rounded-3 p-2 text-center"
                 style="width: 80px; text-decoration: none;"
               >
@@ -418,6 +381,26 @@
         </div>
       </div>
     </div>
+    <br/><br/><br/>
+    <div class="container-fluid" style="background-image: url('https://res.cloudinary.com/dtlkiv19d/image/upload/v1670264382/gh_4_-min_meegci.jpg');  background-attachment: fixed; background-size: 100%;">
+    <div class="choos">
+
+    <div>
+    <h1 class="text-white"  data-aos="zoom-in"
+        data-aos-delay="500"
+        data-aos-duration="1500">Why Choose Us?</h1>
+    <ul  data-aos="zoom-in"
+        data-aos-delay="1000"
+        data-aos-duration="1500">
+    <li class="text-white">High Level of cleanliness</li>
+    <li class="text-white">Affordable Prices</li>
+    <li class="text-white">Accessibility</li>
+    </ul>
+    </div>
+    
+    </div>
+    
+    </div>
     <servicesVue />
 	<br/><br/><br/><br/><br/>
     <footerSection />
@@ -429,12 +412,16 @@ import axios from "axios";
 import navbar from "../components/nav.vue";
 import footerSection from "../components/footer.vue";
 import servicesVue from "../components/services.vue";
+import slideVue from "../components/slide.vue";
+import banaVue from '../components/bana.vue';
 export default {
   name: "HomeView",
   components: {
     navbar,
     footerSection,
     servicesVue,
+    slideVue,
+    banaVue,
   },
   data() {
     return {
@@ -443,7 +430,7 @@ export default {
       houses: [
         {
           id: 1,
-          name: "Master bedroom",
+          name: "Excutive Delux ",
           amount: "62,000",
           bath: 1,
           bed: 1,
@@ -611,7 +598,10 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
+.choos{
+  background-color: rgba(0,0,0, 0.7); height: 70vh; padding: 150px;
+}
 .bookBtn {
   display: none;
 }
@@ -647,6 +637,9 @@ export default {
 @media (max-width:600px){
    .banner-title{
 	font-size: 36px;
+   }
+   .choos{
+    height: 40vh; padding: 50px;
    }
    .banner{
 	height: 40vh;

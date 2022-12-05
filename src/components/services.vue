@@ -7,8 +7,8 @@
 					<div class="w-50" >
                     <img :src="service.photo" style="width: 100%; height: 200px; object-fit: cover; margin-left: -12px;">
                 </div>
-					<div class="p-3 w-50"> <h5>{{ service.name }}</h5>
-                    <p class="mt-2"> {{ service.des }}</p></div>
+					<div class="p-3 w-50"> <h5> {{ service.name }}</h5>
+                    <p class="mt-2" style="font-size: 13px;"> {{ service.des }}</p></div>
 				</div>
 			</div>
 		</div>
@@ -37,13 +37,13 @@ export default{
                     id:3,
                     name:"Conference Hall",
                     des: "For the guest that need to have conference while staying at the guest house are offered conference hall",
-                    photo: "https://res.cloudinary.com/dtlkiv19d/image/upload/v1670008115/gh_14_uuahhe.jpg"
+                    photo: "https://res.cloudinary.com/dtlkiv19d/image/upload/v1670264439/sl1_n0566v.jpg"
                 },
                 {
                     id:4,
                     name:"Television Full Subscribed",
                     des: "Catching up with sports, music, news and other sorts of entertainment while at the guest house is covered",
-                    photo: "https://media.istockphoto.com/id/1216347742/photo/3-3d-rendering-elegant-and-spacious-bedroom-design-in-modern-apartment-large-wardrobe-next-to.jpg?s=612x612&w=0&k=20&c=haVRiQSMO-zDlOQf0UNIN_593kK6Zw4C9C9b6qY4HF8="
+                    photo: "https://res.cloudinary.com/dtlkiv19d/image/upload/v1670008102/gh_16_mpiupo.jpg"
                 },
                 {
                     id:5,
