@@ -50,4 +50,10 @@ export default {
 	margin-left: 70%;
 	object-fit: cover;
 }
+@media (max-width:600px){
+  .small-pic {
+    margin-left: 40%;
+  }
+
+}
 </style>
