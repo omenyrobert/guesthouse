@@ -2,6 +2,7 @@
 	<div>
 		<navbar />
 		<mainPage />
+<aboutCompVue/>
 		<div class="container">
 			<h4
 				class="text-primary text-center mt-5"
@@ -392,6 +393,7 @@ import navbar from "../components/nav.vue";
 import footerSection from "../components/footer.vue";
 import mainPage from "../components/mainPage.vue";
 import servicesVue from "../components/services.vue";
+import aboutCompVue from "../components/aboutComp.vue";
 export default {
 	name: "HomeView",
 	components: {
@@ -399,6 +401,7 @@ export default {
 		footerSection,
 		mainPage,
 		servicesVue,
+		aboutCompVue
 	},
 	data() {
 		return {
