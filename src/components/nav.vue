@@ -34,7 +34,7 @@
       <ul class="navbar-nav ms-auto ">
       
       </ul>
-      <ul class="navbar-nav ms-auto ">
+      <ul class="navbar-nav ms-auto bg-white nnav">
         <li class="nav-item">
           <router-link to="/home" class="nav-link mx-2 text-uppercase">Home</router-link>
         </li>
@@ -78,6 +78,9 @@ export default{
 @media screen and (max-width:540px){
   .heada{
   height: 95px;
+}
+.nnav{
+  padding: 30px;
 }
 }
 </style>

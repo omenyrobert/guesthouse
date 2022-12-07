@@ -1,6 +1,40 @@
 <template>
   <div>
     <VueSlickCarousel v-bind="settings">
+      <div class="card11 card">
+        <div class="row">
+          <div
+            class="col-md-6"
+          >
+          <div class="left-card">
+            <h1
+              data-aos="zoom-up"
+              data-aos-delay="500"
+              data-aos-duration="1500"
+            >
+              Welcome To Bethany Home and guesthouse
+            </h1>
+            <p
+              data-aos="zoom-left"
+              data-aos-delay="1000"
+              data-aos-duration="1500"
+            >
+              All the comfort at place
+            </p>
+            <button
+              data-aos="zoom-in"
+              data-aos-delay="1500"
+              data-aos-duration="1500"
+              class="btn btn-primary"
+            >
+              Book Now
+            </button>
+          </div>
+           
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
       <div class="card1 card">
         <div class="row">
           <div
@@ -207,6 +241,9 @@ export default {
   background-size: 100%;
   padding: 150px;
 }
+card11{
+  background-image: url('https://res.cloudinary.com/dtlkiv19d/image/upload/v1670264382/gh_4_-min_meegci.jpg');
+}
 .card1 {
   background-image: url("https://res.cloudinary.com/dtlkiv19d/image/upload/v1670264441/sl4_vuqwiq.jpg");
 }
@@ -240,7 +277,8 @@ export default {
   }
   .card{
     padding: 20px;
-    height: 60vh;
+    height: 55vh;
+    background-size: cover;
   }
 }
 </style>

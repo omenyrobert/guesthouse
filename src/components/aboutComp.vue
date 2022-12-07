@@ -49,6 +49,7 @@ export default {
 	margin-top: -35%;
 	margin-left: 70%;
 	object-fit: cover;
+
 }
 @media (max-width:600px){
   .small-pic {

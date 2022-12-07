@@ -499,7 +499,7 @@ export default {
         {
           id: 4,
           name: "Double decker bedroom",
-          amount: "62,000",
+          amount: "60,000",
           bath: 1,
           bed: 1,
 		  single: " 17,000",
