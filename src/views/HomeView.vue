@@ -499,7 +499,7 @@ export default {
         {
           id: 4,
           name: "Double decker bedroom",
-          amount: "60,000",
+          amount: "62,000",
           bath: 1,
           bed: 1,
 		  single: " 17,000",
@@ -523,7 +523,7 @@ export default {
         {
           id: 5,
           name: "Twin bedroom",
-          amount: "70,000",
+          amount: "42,000",
           bath: 1,
           bed: 1,
 		  des: "Comes with Breakfast, Free Wi-Fi and Tv.",

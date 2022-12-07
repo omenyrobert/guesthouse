@@ -93,12 +93,16 @@ export default {
 	border-radius: 100%;
 	z-index: 1000;
 	margin-top: -35%;
-	margin-left: 70%;
+	margin-left: 75%;
 	object-fit: cover;
 }
 @media (max-width:600px){
   .small-pic {
     margin-left: 40%;
+	margin-left: 70%;
+	margin-top: -50%;
+	width: 120px;
+	height: 120px;
   }
 
 }
