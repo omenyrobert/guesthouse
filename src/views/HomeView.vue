@@ -427,7 +427,7 @@ export default {
         {
           id: 1,
           name: "Excutive Delux ",
-          amount: "62,000",
+          amount: "65,000",
           bath: 1,
           bed: 1,
           single: " 52,000",
@@ -451,7 +451,7 @@ export default {
         {
           id: 2,
           name: "Delux bedroom",
-          amount: "52,000",
+          amount: "55,000",
           single: "42,000",
           bath: 1,
           bed: 1,
@@ -475,7 +475,7 @@ export default {
         {
           id: 3,
           name: "Double twin bedroom",
-          amount: "52,000",
+          amount: "55,000",
           bath: 1,
           bed: 1,
 		  single:"27,000",
@@ -499,7 +499,7 @@ export default {
         {
           id: 4,
           name: "Double decker bedroom",
-          amount: "62,000",
+          amount: "65,000",
           bath: 1,
           bed: 1,
 		  single: " 17,000",
@@ -523,7 +523,7 @@ export default {
         {
           id: 5,
           name: "Twin bedroom",
-          amount: "42,000",
+          amount: "45,000",
           bath: 1,
           bed: 1,
 		  des: "Comes with Breakfast, Free Wi-Fi and Tv.",
